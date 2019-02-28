@@ -42,3 +42,9 @@ Scan these items in this order: ABCD; Verify the total price is $15.40.
 1) products. This feature should be available in cart.
 2) Admin should be able enable/disable this feature
 
+#### Soluation:
+I developed a custom Module for download cart items in csv file. Viwe detailes from here
+https://github.com/tarikuli/magento2/tree/master/app/code/Jewel/CartCsv
+
+<b>Evidence</b>
+<img class="float-left rounded-1" src="http://image.mymonogramonline.com/evidence.png" width="900" alt="Evidence">
