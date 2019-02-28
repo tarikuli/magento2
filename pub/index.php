@@ -1,4 +1,6 @@
 <?php
+// phpinfo();
+// exit();
 /**
  * Public alias for the application entry point
  *
