@@ -6,6 +6,15 @@ $b = &$a;
 $b = "2$b";
 echo $a.", ".$b;
 ```
+#### Soluation:
+```
+Output will be = 21,21
+In Line number 1, set a variable value equal 1 (Passed by value)
+In Line number 2,  PHP "Assign By Reference" create a new reference of variable $a by ampersand, Its means $a value not push in $b, $a memory location push in $d with value. $a and $b both using same memory location in RAM and same value. 
+In Line number 3, 2 concate $b (value=1) equal 21 and push to varible $b (value = 21).
+In Line number 4, print both variable value 21, 21 (because both reference use same memory location)
+```
+
 # Problem 2
 #### Complete the following with PHP.
 ```
