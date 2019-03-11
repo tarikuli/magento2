@@ -47,12 +47,32 @@ Scan these items in this order: CCCCCCC; Verify the total price is $7.25.
 Scan these items in this order: ABCD; Verify the total price is $15.40.
 ```
 #### Soluation:
+URL: http://image.mymonogramonline.com/pos.php
 ```
-<?php
+<html>
+<body>
 
-// Get skus from user 
-// Ex: php cartTotalPrice.php ABCDABAA 
-$inputSkus = str_split($argv[1], 1);
+<form action="pos.php" method="post">
+Products : <input type="text" name="product"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+<?php
+// Get skus from user
+// Ex: php cartTotalPrice.php ABCDABAA
+$argv = ABCDABAA;
+
+if (isset($_POST["product"]) && !empty($_POST["product"])) {
+    echo "Scan product".$argv = $_POST["product"];
+} else {
+    echo "Default scan products ".$argv."<br>";
+}
+
+$inputSkus = str_split($argv);
+echo "<pre> Scans Items ";print_r($inputSkus);echo "</pre>";
+
 
 // Counts all the values of an array
 $countSkuArray = array_count_values($inputSkus);
